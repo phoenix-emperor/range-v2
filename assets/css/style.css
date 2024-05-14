@@ -38,6 +38,7 @@
   --black-coral: hsla(220, 12%, 43%, 1);
   --dark-blue: rgb(20, 3, 80);
   --gold: hsla(42, 95%, 31%, 1);
+  --light-gold: hsla(42, 100%, 50%, 1);
 
   /**
    * typography
@@ -286,6 +287,10 @@ body.nav-active { overflow: hidden; }
   animation: slideIn 0.5s ease forwards;
 }
 
+.header.active a.navbar-link {
+  color: var(--light-gold);
+}
+
 @keyframes slideIn {
   0% { transform: translateY(-100%); }
   100% { transform: translateY(0); }
@@ -309,7 +314,7 @@ body.nav-active { overflow: hidden; }
   color: var(--white);
 }
 
-.header.active .nav-open-btn { color: var(--charcoal); }
+.header.active .nav-open-btn { color: var(--white); }
 
 .navbar {
   position: fixed;
@@ -1013,7 +1018,7 @@ body.nav-active { overflow: hidden; }
 
   .header.active .navbar-link:is(:hover, :focus-visible) {
     opacity: 1;
-    color: var(--violet-blue-crayola);
+    color: var(--white);
   }
 
   .header .btn { margin-inline-start: 0; }
@@ -1137,7 +1142,7 @@ body.nav-active { overflow: hidden; }
    * PROJECT
    */
 
-  .project .grid-list { grid-template-columns: repeat(3, 1fr); }
+  .project .grid-list { grid-template-columns: repeat(4, 1fr); }
 
 
 
